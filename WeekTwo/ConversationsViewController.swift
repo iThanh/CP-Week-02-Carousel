@@ -11,16 +11,13 @@ import UIKit
 class ConversationsViewController: UIViewController {
 
     //Outlets
-    
     @IBOutlet weak var backButton: UIButton!
     
     
     //ViewDidLoad
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-      navigationController?.popToRootViewControllerAnimated(true)
+    
 
         // Do any additional setup after loading the view.
     }
@@ -30,10 +27,9 @@ class ConversationsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     //Functions
-    
-    
-    
     @IBAction func didPressBackButton(sender: AnyObject) {
         
         navigationController?.popToRootViewControllerAnimated(true)

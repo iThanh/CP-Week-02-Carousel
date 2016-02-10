@@ -8,11 +8,10 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController, UIScrollViewDelegate {
 
     
     //Outlets
-
     @IBOutlet weak var introScrollFeed: UIScrollView!
     @IBOutlet weak var introScrollFeedImage: UIImageView!
     
@@ -32,28 +31,65 @@ class IntroViewController: UIViewController {
         introScrollFeed.contentSize = CGSizeMake(320, introScrollFeedImage.image!.size.height)
         
         
-       /* introScrollFeed.delegate = self
-        */
+       introScrollFeed.delegate = self
+    
     
         //Default Tile Rotation
-        
         tileImage1.transform = CGAffineTransformMakeDegreeRotation(-10)
         tileImage2.transform = CGAffineTransformMakeDegreeRotation(-10)
         tileImage4.transform = CGAffineTransformMakeDegreeRotation(8)
         tileImage3.transform = CGAffineTransformMakeDegreeRotation(8)
-       tileImage6.transform = CGAffineTransformMakeDegreeRotation(-6)
-       tileImage5.transform = CGAffineTransformMakeDegreeRotation(6)
+        tileImage6.transform = CGAffineTransformMakeDegreeRotation(-6)
+        tileImage5.transform = CGAffineTransformMakeDegreeRotation(6)
         
         // Do any additional setup after loading the view.
     }
     
     
-    //Functions
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    //Functions
+    func scrollViewDidScroll(introScrollFeed: UIScrollView) {
+        // This method is called as the user scrolls
+        
+    }
+  
+    
+    func scrollViewWillBeginDragging(introScrollFeed: UIScrollView) {
+        // Called on finger up if the user dragged
+        
+        UIView.animateWithDuration(1.0, animations: ({
+            self.tileImage1.transform = CGAffineTransformMakeDegreeRotation(10)
+            self.tileImage1.transform = CGAffineTransformMakeTranslation(50, 50)
+
+        }))
+
+        /*
+        tileImage1.transform = CGAffineTransformMakeDegreeRotation(10)
+        tileImage1.transform = CGAffineTransformMakeTranslation(50, 50)
+        */
+        
+        
+    }
+    
+    func scrollViewDidEndDragging(introScrollFeed: UIScrollView,
+        willDecelerate decelerate: Bool) {
+            // This method is called right as the user lifts their finger
+            
+            
+    }
+    
+    func scrollViewDidEndDecelerating(introScrollFeed: UIScrollView) {
+        // This method is called when the scrollview finally stops scrolling.
+        
+        
+    }
+
     
     
    

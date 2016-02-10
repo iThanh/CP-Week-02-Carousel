@@ -8,29 +8,27 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     
     //Outlets
-    
     @IBOutlet weak var welcomeScrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     
     
     
     
     //ViewDidLoad
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         welcomeScrollView.contentSize = CGSize(width: 1280, height: 568)
-        
+        welcomeScrollView.delegate = self
 
         // Do any additional setup after loading the view.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,7 +36,14 @@ class WelcomeViewController: UIViewController {
     
     
     //Functions
-    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        // Get the current page based on the scroll offset
+        let page : Int = Int(round(welcomeScrollView.contentOffset.x / 320))
+        
+        // Set the current page, so the dots will update
+        pageControl.currentPage = page
+        // This method is called when the scrollview finally stops scrolling.
+    }
     
     
     

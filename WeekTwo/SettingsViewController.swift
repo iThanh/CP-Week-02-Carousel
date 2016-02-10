@@ -14,6 +14,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var settingsScrollView: UIScrollView!
     @IBOutlet weak var feedImageView: UIImageView!
     
+    
+    
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +32,40 @@ class SettingsViewController: UIViewController {
     }
     
     
-    //Functions
     
+    //Functions
     @IBAction func didPressCloseButton(sender: AnyObject) {
-        
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    @IBAction func didPressSignout(sender: AnyObject) {
+        let signoutMenu = UIAlertController(title: nil, message: "Sign out of Carousel?", preferredStyle: .ActionSheet)
+        
+        let logoutAction = UIAlertAction(title: "Sign Out", style: .Destructive) { (action) in
+            
+            self.performSegueWithIdentifier("signoutSegue", sender: sender)
+        }
+        
+        /*
+        let passwordOption = UIAlertAction(title: "I Agree", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            self.performSegueWithIdentifier("createAccountSegue", sender: sender)
+        })
+        */
+        
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+        }
+        
+        signoutMenu.addAction(logoutAction)
+        signoutMenu.addAction(cancelAction)
+        
+        self.presentViewController(signoutMenu, animated: true, completion: nil)
+    }
+
+
     
     
     
