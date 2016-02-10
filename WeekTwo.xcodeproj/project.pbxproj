@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3D46F4FE1C6A3EF800F11DB6 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46F4FD1C6A3EF800F11DB6 /* Common.swift */; };
 		3D46F5001C6A3F5F00F11DB6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46F4FF1C6A3F5F00F11DB6 /* IntroViewController.swift */; };
+		3D5A99641C6B857200BFA648 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A99631C6B857200BFA648 /* WelcomeViewController.swift */; };
+		3D5A99661C6B88A200BFA648 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A99651C6B88A200BFA648 /* TimelineViewController.swift */; };
+		3D5A99681C6B8EF200BFA648 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A99671C6B8EF200BFA648 /* ConversationsViewController.swift */; };
+		3D5A996A1C6B8EFD00BFA648 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A99691C6B8EFD00BFA648 /* SettingsViewController.swift */; };
 		3D8051C51C69D5B4007349F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8051C41C69D5B4007349F1 /* AppDelegate.swift */; };
 		3D8051C71C69D5B4007349F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8051C61C69D5B4007349F1 /* ViewController.swift */; };
 		3D8051CA1C69D5B4007349F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8051C81C69D5B4007349F1 /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 /* Begin PBXFileReference section */
 		3D46F4FD1C6A3EF800F11DB6 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		3D46F4FF1C6A3F5F00F11DB6 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		3D5A99631C6B857200BFA648 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		3D5A99651C6B88A200BFA648 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		3D5A99671C6B8EF200BFA648 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		3D5A99691C6B8EFD00BFA648 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3D8051C11C69D5B4007349F1 /* WeekTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8051C41C69D5B4007349F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8051C61C69D5B4007349F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +116,10 @@
 				3D8051C41C69D5B4007349F1 /* AppDelegate.swift */,
 				3D8051C61C69D5B4007349F1 /* ViewController.swift */,
 				3D8051C81C69D5B4007349F1 /* Main.storyboard */,
+				3D5A99671C6B8EF200BFA648 /* ConversationsViewController.swift */,
+				3D5A99691C6B8EFD00BFA648 /* SettingsViewController.swift */,
+				3D5A99651C6B88A200BFA648 /* TimelineViewController.swift */,
+				3D5A99631C6B857200BFA648 /* WelcomeViewController.swift */,
 				3DEF5FB51C6ACAA3009CFAF1 /* LoginViewController.swift */,
 				3D46F4FF1C6A3F5F00F11DB6 /* IntroViewController.swift */,
 				3D8051CD1C69D5B4007349F1 /* LaunchScreen.storyboard */,
@@ -268,8 +280,12 @@
 				3D8051C71C69D5B4007349F1 /* ViewController.swift in Sources */,
 				3D46F4FE1C6A3EF800F11DB6 /* Common.swift in Sources */,
 				3D8051C51C69D5B4007349F1 /* AppDelegate.swift in Sources */,
+				3D5A99681C6B8EF200BFA648 /* ConversationsViewController.swift in Sources */,
+				3D5A99641C6B857200BFA648 /* WelcomeViewController.swift in Sources */,
+				3D5A99661C6B88A200BFA648 /* TimelineViewController.swift in Sources */,
 				3DEF5FB61C6ACAA3009CFAF1 /* LoginViewController.swift in Sources */,
 				3D46F5001C6A3F5F00F11DB6 /* IntroViewController.swift in Sources */,
+				3D5A996A1C6B8EFD00BFA648 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
