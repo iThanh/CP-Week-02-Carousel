@@ -17,21 +17,38 @@ class IntroViewController: UIViewController {
     @IBOutlet weak var introScrollFeedImage: UIImageView!
     
     @IBOutlet weak var tileImage1: UIImageView!
+    @IBOutlet weak var tileImage2: UIImageView!
+    @IBOutlet weak var tileImage4: UIImageView!
+    @IBOutlet weak var tileImage3: UIImageView!
+    @IBOutlet weak var tileImage6: UIImageView!
+    @IBOutlet weak var tileImage5: UIImageView!
     
-    //Functions
+    
+    
+    //View Load
     override func viewDidLoad() {
         super.viewDidLoad()
         
         introScrollFeed.contentSize = CGSizeMake(320, introScrollFeedImage.image!.size.height)
         
+        
+       /* introScrollFeed.delegate = self
+        */
     
         //Default Tile Rotation
+        
         tileImage1.transform = CGAffineTransformMakeDegreeRotation(-10)
+        tileImage2.transform = CGAffineTransformMakeDegreeRotation(-10)
+        tileImage4.transform = CGAffineTransformMakeDegreeRotation(8)
+        tileImage3.transform = CGAffineTransformMakeDegreeRotation(8)
+       tileImage6.transform = CGAffineTransformMakeDegreeRotation(-6)
+       tileImage5.transform = CGAffineTransformMakeDegreeRotation(6)
         
-        
-
         // Do any additional setup after loading the view.
     }
+    
+    
+    //Functions
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,12 +56,7 @@ class IntroViewController: UIViewController {
     }
     
     
-    
-    @IBAction func rotateTile1(sender: AnyObject) {
-        print("Rotated 1")
-    }
-    
-    
+   
     
     
 

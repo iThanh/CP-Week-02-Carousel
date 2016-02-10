@@ -16,6 +16,7 @@
 		3D8051DA1C69D5B4007349F1 /* WeekTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8051D91C69D5B4007349F1 /* WeekTwoTests.swift */; };
 		3D8051E51C69D5B4007349F1 /* WeekTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8051E41C69D5B4007349F1 /* WeekTwoUITests.swift */; };
 		3DEF5FB41C6A4E8B009CFAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF5FB31C6A4E8B009CFAF1 /* Assets.xcassets */; };
+		3DEF5FB61C6ACAA3009CFAF1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEF5FB51C6ACAA3009CFAF1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3D8051E41C69D5B4007349F1 /* WeekTwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTwoUITests.swift; sourceTree = "<group>"; };
 		3D8051E61C69D5B4007349F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DEF5FB31C6A4E8B009CFAF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DEF5FB51C6ACAA3009CFAF1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3D8051C41C69D5B4007349F1 /* AppDelegate.swift */,
 				3D8051C61C69D5B4007349F1 /* ViewController.swift */,
 				3D8051C81C69D5B4007349F1 /* Main.storyboard */,
+				3DEF5FB51C6ACAA3009CFAF1 /* LoginViewController.swift */,
 				3D46F4FF1C6A3F5F00F11DB6 /* IntroViewController.swift */,
 				3D8051CD1C69D5B4007349F1 /* LaunchScreen.storyboard */,
 				3D8051D01C69D5B4007349F1 /* Info.plist */,
@@ -265,6 +268,7 @@
 				3D8051C71C69D5B4007349F1 /* ViewController.swift in Sources */,
 				3D46F4FE1C6A3EF800F11DB6 /* Common.swift in Sources */,
 				3D8051C51C69D5B4007349F1 /* AppDelegate.swift in Sources */,
+				3DEF5FB61C6ACAA3009CFAF1 /* LoginViewController.swift in Sources */,
 				3D46F5001C6A3F5F00F11DB6 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
