@@ -13,6 +13,7 @@
 		3D5A99661C6B88A200BFA648 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A99651C6B88A200BFA648 /* TimelineViewController.swift */; };
 		3D5A99681C6B8EF200BFA648 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A99671C6B8EF200BFA648 /* ConversationsViewController.swift */; };
 		3D5A996A1C6B8EFD00BFA648 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A99691C6B8EFD00BFA648 /* SettingsViewController.swift */; };
+		3D5A996C1C6B999000BFA648 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A996B1C6B999000BFA648 /* SignupViewController.swift */; };
 		3D8051C51C69D5B4007349F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8051C41C69D5B4007349F1 /* AppDelegate.swift */; };
 		3D8051C71C69D5B4007349F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8051C61C69D5B4007349F1 /* ViewController.swift */; };
 		3D8051CA1C69D5B4007349F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8051C81C69D5B4007349F1 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		3D5A99651C6B88A200BFA648 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		3D5A99671C6B8EF200BFA648 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		3D5A99691C6B8EFD00BFA648 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3D5A996B1C6B999000BFA648 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3D8051C11C69D5B4007349F1 /* WeekTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8051C41C69D5B4007349F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8051C61C69D5B4007349F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				3D8051C41C69D5B4007349F1 /* AppDelegate.swift */,
 				3D8051C61C69D5B4007349F1 /* ViewController.swift */,
 				3D8051C81C69D5B4007349F1 /* Main.storyboard */,
+				3D5A996B1C6B999000BFA648 /* SignupViewController.swift */,
 				3D5A99671C6B8EF200BFA648 /* ConversationsViewController.swift */,
 				3D5A99691C6B8EFD00BFA648 /* SettingsViewController.swift */,
 				3D5A99651C6B88A200BFA648 /* TimelineViewController.swift */,
@@ -279,6 +282,7 @@
 			files = (
 				3D8051C71C69D5B4007349F1 /* ViewController.swift in Sources */,
 				3D46F4FE1C6A3EF800F11DB6 /* Common.swift in Sources */,
+				3D5A996C1C6B999000BFA648 /* SignupViewController.swift in Sources */,
 				3D8051C51C69D5B4007349F1 /* AppDelegate.swift in Sources */,
 				3D5A99681C6B8EF200BFA648 /* ConversationsViewController.swift in Sources */,
 				3D5A99641C6B857200BFA648 /* WelcomeViewController.swift in Sources */,

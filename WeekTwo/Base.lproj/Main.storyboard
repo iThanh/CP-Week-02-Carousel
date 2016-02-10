@@ -10,11 +10,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="WeekTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" id="TUy-Yg-WjU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro" id="xOA-v7-N5u">
@@ -45,16 +45,23 @@
                                         <rect key="frame" x="212" y="453" width="152" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oeQ-So-ONF">
+                                        <rect key="frame" x="20" y="984" width="283" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Axz-RD-EK8">
+                                        <rect key="frame" x="19" y="1003" width="283" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="jjv-vy-Hig" kind="push" id="YTy-cl-oTN"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JHR-HO-ZLS">
-                                        <rect key="frame" x="19" y="1047" width="283" height="49"/>
+                                        <rect key="frame" x="19" y="1066" width="283" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="ZJg-WP-0WN" kind="push" id="mrL-6h-e46"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oeQ-So-ONF">
-                                        <rect key="frame" x="20" y="984" width="283" height="49"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -63,7 +70,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Rjv-ac-gcw"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <size key="freeformSize" width="320" height="1136"/>
                     <connections>
                         <outlet property="introScrollFeed" destination="TUy-Yg-WjU" id="0JC-f4-ey9"/>
                         <outlet property="introScrollFeedImage" destination="xOA-v7-N5u" id="Ivs-Pi-Fbw"/>
@@ -79,12 +86,29 @@
             </objects>
             <point key="canvasLocation" x="693" y="421"/>
         </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="ta9-gl-bqn">
+            <objects>
+                <viewController id="jjv-vy-Hig" customClass="SignupViewController" customModule="WeekTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AfR-Oo-3dI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9UF-px-3lW"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMI-9M-rgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="693" y="1440"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="uda-Pk-k11">
             <objects>
                 <viewController id="ZJg-WP-0WN" customClass="LoginViewController" customModule="WeekTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ebx-ee-n0N">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_nav_bar" id="Evp-u0-MDo">
