@@ -15,6 +15,12 @@ class LoginViewController: UIViewController , UIScrollViewDelegate {
     @IBOutlet weak var fieldParentView: UIView!
     @IBOutlet weak var buttonParentView: UIView!
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginActivityIndicator: UIActivityIndicatorView!
+    
     
     //Variables
     var fieldParentInitialY: CGFloat!
@@ -53,10 +59,61 @@ class LoginViewController: UIViewController , UIScrollViewDelegate {
     
 
     
-    //Functions
-    
+    //Functions - Button Events
     @IBAction func didPressBackButton(sender: AnyObject) {
         navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
+    
+    
+    @IBAction func didPressLoginButton(sender: AnyObject) {
+        //If email or password fields are empty
+        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
+            //Show the following alert
+            let missingTextAlert = UIAlertController(title: "Email Missing", message: "Please tell me your email address!", preferredStyle: .Alert)
+            
+            let okAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+            }
+    
+            missingTextAlert.addAction(okAction)
+            presentViewController(missingTextAlert, animated: true) {
+            }
+            
+        }
+        
+            
+        //Or else...
+        else {
+            //If password and email are a specific input
+            if emailTextField.text == "jan@jansen.co" && passwordTextField.text == "jan" {
+                //Start animating, delay and perform segue
+                loginActivityIndicator.startAnimating()
+                delay(2, closure: { () -> () in
+                    self.loginActivityIndicator.stopAnimating()
+                    self.performSegueWithIdentifier("loginSegue", sender: nil)
+                })
+            }
+            //Or else...
+            else {
+                //Start animating, delay and show the following alternative alert
+                loginActivityIndicator.startAnimating()
+                delay(2, closure: { () -> () in
+                    self.loginActivityIndicator.stopAnimating()
+        
+                    let wrongTextAlert = UIAlertController(title: "Wrong Password or Email", message: "Try again mofo!", preferredStyle: .Alert)
+    
+                    let okAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                    }
+                
+                    wrongTextAlert.addAction(okAction)
+                    self.presentViewController(wrongTextAlert, animated: true) {
+                    }
+                
+                })
+            }
+            
+        }
+
     }
     
     
@@ -70,23 +127,6 @@ class LoginViewController: UIViewController , UIScrollViewDelegate {
         if loginScrollView.contentOffset.y <= -50 {
             view.endEditing(true)
         }
-    }
-    
-    
-    func scrollViewWillBeginDragging(loginScrollView: UIScrollView) {
-        // Called on finger up if the user dragged. velocity is in points/millisecond. targetContentOffset may be changed to adjust where the scroll view comes to rest
-        
-    }
-    
-    
-    func scrollViewDidEndDragging(loginScrollView: UIScrollView,
-        willDecelerate decelerate: Bool) {
-            // This method is called right as the user lifts their finger
-    }
-    
-    
-    func scrollViewDidEndDecelerating(loginScrollView: UIScrollView) {
-        // This method is called when the scrollview finally stops scrolling.
     }
     
     
@@ -108,16 +148,5 @@ class LoginViewController: UIViewController , UIScrollViewDelegate {
 
     
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

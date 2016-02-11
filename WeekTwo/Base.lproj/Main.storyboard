@@ -171,11 +171,11 @@
                                                 <rect key="frame" x="20" y="13" width="280" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
-                                                    <segue destination="p6P-Zb-8io" kind="modal" animates="NO" id="UuZ-fw-tUX"/>
+                                                    <action selector="didPressLoginButton:" destination="ZJg-WP-0WN" eventType="touchUpInside" id="a87-wh-wkP"/>
                                                 </connections>
                                             </button>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="nQI-yZ-xuS">
-                                                <rect key="frame" x="150" y="26" width="20" height="20"/>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="nQI-yZ-xuS">
+                                                <rect key="frame" x="195" y="27" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
                                         </subviews>
@@ -193,8 +193,13 @@
                     <navigationItem key="navigationItem" id="HMO-Nb-Sqv"/>
                     <connections>
                         <outlet property="buttonParentView" destination="mWr-5H-TNc" id="zJ4-KE-v64"/>
+                        <outlet property="emailTextField" destination="WvG-Ty-ZnJ" id="tOJ-DJ-kAZ"/>
                         <outlet property="fieldParentView" destination="bqf-8r-R7A" id="q66-hq-MWJ"/>
+                        <outlet property="loginActivityIndicator" destination="nQI-yZ-xuS" id="4zR-M0-QCq"/>
+                        <outlet property="loginButton" destination="UHT-kg-GGm" id="gOH-f6-CM4"/>
                         <outlet property="loginScrollView" destination="ovr-BB-tFd" id="ZG7-tu-ZE1"/>
+                        <outlet property="passwordTextField" destination="9J2-4y-FcX" id="zrr-uJ-V8e"/>
+                        <segue destination="p6P-Zb-8io" kind="modal" identifier="loginSegue" id="yWg-1f-wOe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZY-H2-1GX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -470,6 +475,6 @@
         <image name="welcome4" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X3e-RP-QcV"/>
+        <segue reference="4ma-i2-S9Y"/>
     </inferredMetricsTieBreakers>
 </document>
