@@ -62,34 +62,54 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     
     func scrollViewWillBeginDragging(introScrollFeed: UIScrollView) {
         // Called on finger up if the user dragged
-        
         UIView.animateWithDuration(1.0, animations: ({
             self.tileImage1.transform = CGAffineTransformMakeDegreeRotation(10)
             self.tileImage1.transform = CGAffineTransformMakeTranslation(50, 50)
+            
+            self.tileImage2.transform = CGAffineTransformMakeDegreeRotation(-20)
+            self.tileImage2.transform = CGAffineTransformMakeTranslation(-40, -25)
+            
+            self.tileImage3.transform = CGAffineTransformMakeDegreeRotation(9)
+            self.tileImage3.transform = CGAffineTransformMakeTranslation(50, 50)
+            
+            self.tileImage4.transform = CGAffineTransformMakeDegreeRotation(10)
+            self.tileImage4.transform = CGAffineTransformMakeTranslation(20, 80)
+            
+            self.tileImage5.transform = CGAffineTransformMakeDegreeRotation(10)
+            self.tileImage5.transform = CGAffineTransformMakeTranslation(50, 90)
+            
+            self.tileImage6.transform = CGAffineTransformMakeDegreeRotation(10)
+            self.tileImage6.transform = CGAffineTransformMakeTranslation(50, 50)
 
         }))
-
-        /*
-        tileImage1.transform = CGAffineTransformMakeDegreeRotation(10)
-        tileImage1.transform = CGAffineTransformMakeTranslation(50, 50)
-        */
-        
-        
     }
+    
     
     func scrollViewDidEndDragging(introScrollFeed: UIScrollView,
         willDecelerate decelerate: Bool) {
             // This method is called right as the user lifts their finger
-            
-            
     }
+    
     
     func scrollViewDidEndDecelerating(introScrollFeed: UIScrollView) {
         // This method is called when the scrollview finally stops scrolling.
-        
-        
     }
 
+    
+    
+    
+    @IBAction func didPressRotationButton(sender: AnyObject) {
+  
+        /*
+        UIView.animateWithDuration(1.0, animations: ({
+        self.tileImage1.transform = CGAffineTransformMakeDegreeRotation(10)
+        self.tileImage1.transform = CGAffineTransformMakeTranslation(50, 50)
+        }))
+        */
+
+    }
+    
+    
     
     
    

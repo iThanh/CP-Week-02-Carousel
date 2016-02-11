@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="splash_v2" id="pO4-Vb-wdn">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="splash_offset_20" id="o5R-9S-js5">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -28,6 +28,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash_v2" width="320" height="568"/>
+        <image name="splash_offset_20" width="320" height="568"/>
     </resources>
 </document>
