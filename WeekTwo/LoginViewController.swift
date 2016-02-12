@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController , UIScrollViewDelegate {
     
     //Outlets
+    @IBOutlet weak var loginNavBar: UIImageView!
     @IBOutlet weak var loginScrollView: UIScrollView!
     @IBOutlet weak var fieldParentView: UIView!
     @IBOutlet weak var buttonParentView: UIView!
@@ -51,6 +52,35 @@ class LoginViewController: UIViewController , UIScrollViewDelegate {
         
         
     }
+    
+    /*
+    override func viewWillAppear(animated: Bool) {
+    // Set initial transform values 20% of original size
+    let transform = CGAffineTransformMakeScale(0.2, 0.2)
+    // Apply the transform properties of the views
+    loginNavBar.transform = transform
+    fieldParentView.transform = transform
+    // Set the alpha properties of the views to transparent
+    loginNavBar.alpha = 0
+    fieldParentView.alpha = 0
+    }
+    
+    // The main view appeared...
+    override func viewDidAppear(animated: Bool) {
+        //Animate the code within over 0.3 seconds...
+        UIView.animateWithDuration(0.3) { () -> Void in
+            // Return the views transform properties to their default states.
+            self.fieldParentView.transform = CGAffineTransformIdentity
+            self.loginNavBar.transform = CGAffineTransformIdentity
+            // Set the alpha properties of the views to fully opaque
+            self.fieldParentView.alpha = 1
+            self.loginNavBar.alpha = 1
+        }
+    }
+    
+    */
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

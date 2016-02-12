@@ -13,6 +13,8 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     //Outlets
     @IBOutlet weak var welcomeScrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var buttonParentView: UIView!
     
     
     
@@ -37,12 +39,25 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     
     //Functions
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        // Get the current page based on the scroll offset
         let page : Int = Int(round(welcomeScrollView.contentOffset.x / 320))
         
-        // Set the current page, so the dots will update
         pageControl.currentPage = page
-        // This method is called when the scrollview finally stops scrolling.
+        
+        if(page == 3)
+        {
+            buttonParentView.hidden = false
+            pageControl.hidden = true
+            UIView.animateWithDuration(0.5, animations: {
+                self.buttonParentView.alpha = 1
+            })
+        }
+        else {
+            buttonParentView.hidden = true
+            pageControl.hidden = false
+            self.buttonParentView.alpha = 0
+        }
+        
+    
     }
     
     

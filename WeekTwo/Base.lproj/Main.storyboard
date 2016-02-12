@@ -65,7 +65,7 @@
                                         <rect key="frame" x="19" y="1066" width="283" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="ZJg-WP-0WN" kind="push" id="mrL-6h-e46"/>
+                                            <segue destination="ZJg-WP-0WN" kind="push" identifier="introToLoginSegue" id="mrL-6h-e46"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -197,6 +197,7 @@
                         <outlet property="fieldParentView" destination="bqf-8r-R7A" id="q66-hq-MWJ"/>
                         <outlet property="loginActivityIndicator" destination="nQI-yZ-xuS" id="4zR-M0-QCq"/>
                         <outlet property="loginButton" destination="UHT-kg-GGm" id="gOH-f6-CM4"/>
+                        <outlet property="loginNavBar" destination="Evp-u0-MDo" id="n12-Nx-NmV"/>
                         <outlet property="loginScrollView" destination="ovr-BB-tFd" id="ZG7-tu-ZE1"/>
                         <outlet property="passwordTextField" destination="9J2-4y-FcX" id="zrr-uJ-V8e"/>
                         <segue destination="p6P-Zb-8io" kind="modal" identifier="loginSegue" id="yWg-1f-wOe"/>
@@ -220,8 +221,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" id="WZN-vM-tl8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="i9j-pH-Wl0">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -239,17 +240,24 @@
                                         <rect key="frame" x="960" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="backup_button" id="A86-wx-Vrc">
-                                        <rect key="frame" x="960" y="463" width="320" height="97"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pea-ei-Qba">
-                                        <rect key="frame" x="979" y="506" width="283" height="46"/>
+                                    <view contentMode="scaleToFill" id="AGF-jt-k9Q">
+                                        <rect key="frame" x="968" y="437" width="320" height="131"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <segue destination="vBH-Ew-ZVr" kind="modal" animates="NO" id="cyd-KS-T49"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="backup_button" id="A86-wx-Vrc">
+                                                <rect key="frame" x="0.0" y="17" width="320" height="97"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pea-ei-Qba">
+                                                <rect key="frame" x="18" y="43" width="283" height="46"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="vBH-Ew-ZVr" kind="modal" animates="NO" id="cyd-KS-T49"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="8fx-Cb-4Dh">
@@ -265,7 +273,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
+                        <outlet property="buttonParentView" destination="AGF-jt-k9Q" id="bx2-ej-pJE"/>
                         <outlet property="pageControl" destination="8fx-Cb-4Dh" id="twt-i7-nVU"/>
+                        <outlet property="startButton" destination="Pea-ei-Qba" id="gAZ-nN-waP"/>
                         <outlet property="welcomeScrollView" destination="WZN-vM-tl8" id="lw9-c6-5y0"/>
                     </connections>
                 </viewController>
@@ -475,6 +485,6 @@
         <image name="welcome4" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4ma-i2-S9Y"/>
+        <segue reference="X3e-RP-QcV"/>
     </inferredMetricsTieBreakers>
 </document>
