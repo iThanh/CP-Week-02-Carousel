@@ -18,6 +18,7 @@ Required completed use cases/interactions:
 * [x] SettingsView: User can log out
 
 Optional completed use cases/interactions:
+* IntroView: Photo tiles transform with scrolling
 * LoginView: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
 * WelcomeView: User can page between the screens with updated dots
 * WelcomeView: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.* TimelineView:
@@ -25,7 +26,6 @@ Optional completed use cases/interactions:
 
 
 Backlog Optional
-* IntroView: Photo tiles transform with scrolling
 * LoginView: Optional: On appear, scale the form up and fade it in.
 * SignupView: Create a Dropbox
 * SignupView: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
