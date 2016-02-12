@@ -57,7 +57,7 @@
                                         <rect key="frame" x="19" y="1066" width="283" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="ZJg-WP-0WN" kind="push" identifier="introToLoginSegue" id="mrL-6h-e46"/>
+                                            <segue destination="ZJg-WP-0WN" kind="push" identifier="introToLoginSegue" animates="NO" id="mrL-6h-e46"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -477,6 +477,6 @@
         <image name="welcome4" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X3e-RP-QcV"/>
+        <segue reference="4ma-i2-S9Y"/>
     </inferredMetricsTieBreakers>
 </document>

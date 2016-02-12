@@ -125,6 +125,8 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         //tileImage1.transform = CGAffineTransformMakeDegreeRotation(tileImage1ConvertedRotation)
         
         
+        tileImage1.transform = CGAffineTransformMakeScale(1, 1.2)
+        tileImage1.transform = CGAffineTransformMakeDegreeRotation(10)
         
         
         //Combining all three transformations

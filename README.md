@@ -18,11 +18,11 @@ Required completed use cases/interactions:
 * [x] SettingsView: User can log out
 
 Optional completed use cases/interactions:
-* IntroView: Photo tiles transform with scrolling
-* LoginView: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
-* WelcomeView: User can page between the screens with updated dots
-* WelcomeView: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.* TimelineView:
-* SettingsView: Implemented UIAlertViewController
+* [x] IntroView: Photo tiles transform with scrolling
+* [x] LoginView: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
+* [x] WelcomeView: User can page between the screens with updated dots
+* [x] WelcomeView: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button.* TimelineView:
+* [x] SettingsView: Implemented UIAlertViewController
 
 
 Backlog Optional
