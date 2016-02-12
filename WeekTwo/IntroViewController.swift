@@ -58,24 +58,6 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     //Functions - Scroll Events
     func scrollViewDidScroll(introScrollFeed: UIScrollView) {
         
-        /*
-        //Position
-        let tileOneY = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 100)
-        let tileOneX = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 100)
-        let tileOneTranslated = CGAffineTransformMakeTranslation(tileOneX, tileOneY)
-        
-        //Scale
-        let tileOneConvertedScale = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 1.2, r2Max: 1)
-        let tileOneScale = CGAffineTransformMakeScale(tileOneConvertedScale, tileOneConvertedScale)
-        
-        //Rotation
-        let tileOneConvertedRotation = convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min:0, r2Max:10)
-        let tileOneRotation = CGAffineTransformMakeDegreeRotation(tileOneConvertedRotation)
-        
-        tileOne.transform = CGAffineTransformConcat(tileOneTranslated, CGAffineTransformConcat(tileOneRotation, tileOneScale))
-        
-        */
-        
         
         //Positioning and translating the tiles, r2Min = storyboard start position of tile
         let tileImage1Y = convertValue(introScrollFeed.contentOffset.y, r1Min: -20, r1Max: 548, r2Min: 0, r2Max: 746)
@@ -111,31 +93,9 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     
     //Functions - Button Events
     
-    /*
-    @IBAction func didPressRotationButton(sender: AnyObject) {
-    
-    UIView.animateWithDuration(1.0, animations: ({
-    self.tileImage1.transform = CGAffineTransformMakeDegreeRotation(10)
-    self.tileImage1.transform = CGAffineTransformMakeTranslation(50, 50)
-    }))
-    
-    }
-    */
     
     
     
     
-    
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }

@@ -1,21 +1,21 @@
 # Codepath Week 02 Assignment: Carousel
 
-Time spent: ~14h
+Time spent: ~7h
  
 
 Required completed use cases/interactions:
-* IntroView: Photo tiles are visible
-* LoginView: Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
-* LoginView: If the username or password fields are empty, user sees an error alert.
-* LoginView: If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
-* LoginView: If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
-* WelcomeView: User can page between the screens
-* TimelineView: Display a scrollable view of images.
-* TimelineView: User can tap on the conversations button to see the conversations screen (push).
-* TimelineView: User can tap on the profile image to see the settings view (modal from below).* SettingsView:
-* ConversationsView: User can dismiss the conversations screen
-* SettingsView: User can dismiss the settings screen.
-* SettingsView: User can log out
+* [x] IntroView: Photo tiles are visible
+* [x] LoginView: Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
+* [x] LoginView: If the username or password fields are empty, user sees an error alert.
+* [x] LoginView: If credentials are incorrect, user sees a loading indicator for 2 seconds followed by an error alert.
+* [x] LoginView: If the credentials are correct, user sees a loading indicator for 2 seconds followed by a transition to the Sign In screens.
+* [x] WelcomeView: User can page between the screens
+* [x] TimelineView: Display a scrollable view of images.
+* [x] TimelineView: User can tap on the conversations button to see the conversations screen (push).
+* [x] TimelineView: User can tap on the profile image to see the settings view (modal from below).* SettingsView:
+* [x] ConversationsView: User can dismiss the conversations screen
+* [x] SettingsView: User can dismiss the settings screen.
+* [x] SettingsView: User can log out
 
 Optional completed use cases/interactions:
 * LoginView: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.
