@@ -100,7 +100,7 @@ class LoginViewController: UIViewController , UIScrollViewDelegate {
         //If email or password fields are empty
         if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
             //Show the following alert
-            let missingTextAlert = UIAlertController(title: "Email or Password Missing", message: "Please tell me your more!", preferredStyle: .Alert)
+            let missingTextAlert = UIAlertController(title: "Email or Password Missing", message: "Please tell me more!", preferredStyle: .Alert)
             
             let okAction = UIAlertAction(title: "OK", style: .Default) { (action) in
             }
@@ -130,7 +130,7 @@ class LoginViewController: UIViewController , UIScrollViewDelegate {
                 delay(2, closure: { () -> () in
                     self.loginActivityIndicator.stopAnimating()
         
-                    let wrongTextAlert = UIAlertController(title: "Wrong Password or Email", message: "Try again mofo!", preferredStyle: .Alert)
+                    let wrongTextAlert = UIAlertController(title: "Wrong Password or Email", message: "Try again!", preferredStyle: .Alert)
     
                     let okAction = UIAlertAction(title: "OK", style: .Default) { (action) in
                     }
