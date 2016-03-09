@@ -9,9 +9,38 @@
 import UIKit
 
 class SignupViewController: UIViewController {
+    
+    
+    //Outlets
+    @IBOutlet weak var signupScrollView: UIScrollView!
+    @IBOutlet weak var fieldParentView: UIView!
+    @IBOutlet weak var buttonParentView: UIView!
+    @IBOutlet weak var firstNameText: UITextField!
+    @IBOutlet weak var lastNameText: UITextField!
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var buttonText: UITextField!
+    @IBOutlet weak var signupButton: UIButton!
+    
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+//        super.viewDidLoad()
+//        
+//        
+//        signupScrollView.delegate = self
+//        
+//        signupScrollView.contentSize = signupScrollView.frame.size
+//        signupScrollView.contentInset.bottom = 100
+//        
+//        
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+//        
+//        
+//        fieldParentInitialY = fieldParentView.frame.origin.y
+//        fieldParentOffset = -80
+//        buttonParentInitialY = buttonParentView.frame.origin.y
+//        buttonParentOffset = -270
+
 
         // Do any additional setup after loading the view.
     }
