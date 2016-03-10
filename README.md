@@ -3,7 +3,7 @@
 Time spent: ~7h
 
 
-Required completed use cases/interactions:
+Completed use cases/interactions:
 * [x] IntroView: Photo tiles are visible
 * [x] LoginView: Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
 * [x] LoginView: If the username or password fields are empty, user sees an error alert.
